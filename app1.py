@@ -80,7 +80,7 @@ shl_assessments = [
     }
 ]
 
-bert_model = SentenceTransformer("all-MiniLM-L6-v2")
+bert_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
 nlp = spacy.load("en_core_web_sm")
 
 assessment_texts = [a["name"] + " " + a["description"] for a in shl_assessments]
